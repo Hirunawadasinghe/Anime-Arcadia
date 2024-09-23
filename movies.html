@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Arcadia</title>
+    <link rel="icon" href="images/assets/fave-image.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="common-style.css">
+    <link rel="stylesheet" href="play-movie.css">
+    <script defer src="common-script.js"></script>
+    <script defer src="play-movie.js"></script>
+    <script defer src="tab-section.js"></script>
+    <script defer src="search-script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="panel">
+            <div id="main-video-container" class="tab-section">
+                <div id="video-container">
+                    <div class="preview-wraper">
+                        <iframe id="iframe-preview" allowfullscreen allowtransparency allow="autoplay" scrolling="no"
+                            frameborder="0"></iframe>
+                        <video id="video-preview" src="#" loading="lazy" controls
+                            poster="images/optimized-loading-screen.gif"></video>
+                    </div>
+                    <br>
+                    <div class="details-container">
+                        <div class="details-left-section">
+                            <img src="" id="thumbnail-image">
+
+                            <div class="btn-options-container">
+                                <button class="b1" style="background-color: var(--light-blue-color)">Download <img
+                                        src="images/assets/arrow-1.png"></button>
+                                <div id="optional-download-btn-container"></div>
+                            </div>
+
+                            <div class="btn-options-container">
+                                <button class="b1" style="background-color: #e5a802">Switch Player <img
+                                        src="images/assets/arrow-1.png"></button>
+                                <div id="optional-player-btn-container"></div>
+                            </div>
+
+                            <div class="share-details-container">
+                                <p>Share with Others</p>
+                                <div>
+                                    <a href="#" target="_blank" title="Facebook" id="facebook-share-link">
+                                        <img src="images/social-media-icons/facebook-icon-with-background.png"
+                                            alt="Facebook">
+                                    </a>
+                                    <a href="#" target="_blank" title="WhatsApp" id="whatsapp-share-link">
+                                        <img src="images/social-media-icons/whatsapp-icon-with-background.png"
+                                            alt="WhatsApp">
+                                    </a>
+                                    <a href="#" target="_blank" title="Twitter" id="twitter-share-link">
+                                        <img src="images/social-media-icons/twitter-icon-with-background.png"
+                                            alt="Twitter">
+                                    </a>
+                                    <a href="#" target="_blank" title="Telegram" id="telegram-share-link">
+                                        <img src="images/social-media-icons/telegram-icon-with-background.png"
+                                            alt="Telegram">
+                                    </a>
+                                    <img src="images/social-media-icons/copy-icon-with-background.png" alt="Copy" title="Copy to Clipboard" id="copy-share-link">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="details-right-section">
+                            <div class="title-container">
+                                <p id="video-title"></p>
+                                <p id="video-alt-title"></p>
+                            </div>
+                            <div class="video-description-container">
+                                <p id="video-description"></p>
+                            </div>
+                            <div id="data-container"></div>
+                            <div id="tags-container"></div>
+                            <div class="notice">
+                                <h4 onclick="this.parentElement.remove()">&times;</h4>
+                                <p>Watch ad-free</p>
+                                <span>Please note that ads may appear in the player because our service is currently
+                                    running on a free server. To enjoy an ad-free experience, switch the player to Player 2 or use an ad-blocker.</span>
+                                <span>ලඟකදි ඉඳන් ප්ලේයර් එකේ ඇඩ්ස් ප්ලේ වෙන්න පටන් අරන්. ප්ලේයර් එක Player 2 එකට මාරුකරල
+                                    බලන්න, එහෙම නැත්තම් ad-blocker එකක් පාවිච්චි කරන්න​. Sorry!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p id="error-text">
+                    Couldn't find the video URL. If you found this as a bug, please report it by
+                    clicking
+                    <a href="request.html">here.</a>
+                </p>
+            </div>
+
+            <div id="playlist-container">
+                <div class="main-tab-container">
+                    <div class="tab-title-container">
+                        <p class="tab-title">Episodes</p>
+                    </div>
+                    <div class="tab-section playlist-container">
+                        <div class="playlist-container2">
+                            <div class="playlist-item-container" id="playlist"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div id="disqus_thread" class="panel"></div>
+
+            <div class="main-tab-container">
+                <div class="tab-title-container">
+                    <p class="tab-title" id="related-section-title">More Like:</p>
+                </div>
+                <div class="tab-section">
+                    <div class="movie-cards-container" id="related-section"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right-panel" class="panel"></div>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>

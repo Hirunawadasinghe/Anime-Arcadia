@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/bdc7e5eff003a6a070f472a3/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anime Arcadia</title>
+    <link rel="icon" href="images/assets/fave-image.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="common-style.css">
+    <link rel="stylesheet" href="home.css">
+    <script defer src="common-script.js"></script>
+    <script defer src="tab-section.js"></script>
+    <script defer src="home-script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <div class="slideshow-container">
+                <div id="slideshow-images"></div>
+                <div class="slide-show-details-container">
+                    <div class="slide-show-details">
+                        <div class="slide-show-title-container">
+                            <p id="slide-show-title"></p>
+                        </div>
+                        <div class="center">
+                            <a href="" id="slide-show-btn"><button class="slide-show-btn">Watch Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/assets/arrow-1.png" class="slide-card-btn center" style="left: 3%;"
+                    onclick="pushSlides('left')">
+                <img src="images/assets/arrow-1.png" class="slide-card-btn center"
+                    style="right: 3%; transform: scaleX(-1);" onclick="pushSlides('right')">
+            </div>
+
+            <div class="news-tab">
+                <div class="news-tab-title-btn">
+                    <div>
+                        <img src="images/assets/current-icon.png">
+                        <p>News</p>
+                    </div>
+                </div>
+                <div class="news-tab-item-container">
+                    <div id="news-item-container"></div>
+                </div>
+                <button onclick="toggle_news_tab_scroll()">
+                    <img src="images/assets/pause-icon.png" alt="pause" id="news-button-icon">
+                </button>
+            </div>‍
+
+            <div id="tab-section" class="panel"></div>
+        </div>
+
+        <div id="right-panel" class="panel"></div>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>

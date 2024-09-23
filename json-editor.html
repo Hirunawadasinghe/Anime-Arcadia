@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Editor</title>
+    <link rel="stylesheet" href="json-editor-style.css">
+</head>
+
+<body>
+    <div id="login-container">
+        <div class="lg-input-c1">
+            <div class="lg-input-c2">
+                <div class="lg-logo-container">
+                    <p>ANIME ARCADIA</p>
+                </div>
+                <div class="lg-input-c3">
+                    <div>
+                        <label for="input-username">Username</label>
+                        <input type="text" class="form-input" id="input-username">
+                    </div>
+                    <div>
+                        <label for="input-password">Password</label>
+                        <input type="password" class="form-input" id="input-password">
+                    </div>
+                    <br>
+                    <button onclick="checkLogin()" class="b1 white">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="apc" style="display: none;">
+        <div class="content">
+            <div>
+                <div class="container">
+                    <div class="input-container">
+                        <label for="input-1">Name</label>
+                        <input type="text" class="form-input input-bar" id="input-1">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-2">Name in Japanese</label>
+                        <input type="text" class="form-input input-bar" id="input-2">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-3">Thumbnail image URL</label>
+                        <input type="text" class="form-input input-bar" id="input-3">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-4">Description</label>
+                        <input type="text" class="form-input input-bar" id="input-4">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-5">Language</label>
+                        <input type="text" class="form-input input-bar" id="input-5">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-6">Release year</label>
+                        <input type="text" class="form-input input-bar" id="input-6">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-7">Type</label>
+                        <select class="form-input input-bar" id="input-7">
+                            <option value="TV">TV</option>
+                            <option value="Movie">Movie</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-8">Total Episodes</label>
+                        <input type="text" class="form-input input-bar" id="input-8">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-9">Tags (separate each tag with a coma ",")</label>
+                        <input type="text" onkeyup="separate(this, 'in-1')" class="form-input input-bar" id="input-9">
+                        <div class="tag-container" id="in-1"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="input-10">Links (separate each link with a coma ",")</label>
+                        <input type="text" onkeyup="separate(this, 'in-2')" class="form-input input-bar" id="input-10">
+                        <div class="tag-container" id="in-2"></div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="center" style="gap: 1em;">
+                    <button onclick="updateJson()" class="b1">Update JSON text</button>
+                    <button onclick="clearForm()" class="b1">Clear form</button>
+                    <button onclick="removeLast()" class="b1">Remove last item</button>
+                </div>
+            </div>
+
+            <div class="output-container">
+                <div style="display: flex;">
+                    <button class="b2" style="border-top-left-radius: 5px" onclick="toggleVisualTab('div')">Preview</button>
+                    <button class="b2" onclick="toggleVisualTab('text')">Edit Json</button>
+                    <button class="b2" onclick="document.getElementById('fileInput').click()">Import Data</button>
+                    <input type="file" id="fileInput" accept=".json" style="display: none;">
+                    <button class="b2" style="border-top-right-radius: 5px" onclick="exportJson()">Export Data</button>
+                </div>
+                <textarea id="json-output">[]</textarea>
+                <div id="preview"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="json-editor-script.js"></script>
+</body>
+
+</html>

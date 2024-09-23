@@ -1,0 +1,98 @@
+<div class="background-image-container">
+    <div class="gradient-down">
+        <div class="gradient-up">
+            <div class="wrapper main-image"></div>
+        </div>
+    </div>
+</div>
+
+<div id="tags-colors"></div>
+
+<div class="header-section">
+    <div class="header-logo-container">
+        <a href="index.html">
+            <img src="images/logo.png">
+        </a>
+    </div>
+
+    <div class="search-bar-container1">
+        <form onsubmit="openSearch('searchbar_#1'); return false;" class="search-bar-container2">
+            <input type="text" id="searchbar_#1" autocomplete="off" placeholder="Search anime or series"
+                oninput="find_suggestions(this, 'datalist-container')" onclick="add_input_listener(this)">
+            <button type="submit" class="center">
+                <img src="images\assets\search-icon.png" alt="search button">
+            </button>
+        </form>
+        <div class="datalist-container">
+            <div id="datalist-container"></div>
+        </div>
+    </div>
+
+    <div class="navigation-list">
+        <a href="populer.html" class="center navigation-list-btn">
+            <p>Populer</p>
+        </a>
+        <a href="genres.html" class="center navigation-list-btn">
+            <p>Genres</p>
+        </a>
+        <a href="az-list.html" class="center navigation-list-btn">
+            <p>AZ List</p>
+        </a>
+        <a href="about-us-page.html" class="center navigation-list-btn">
+            <p>About Us</p>
+        </a>
+        <a href="request.html" class="center navigation-list-btn">
+            <p>Request Updates</p>
+        </a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QMAJH76B7XFNJ" target="_blank"
+            class="center navigation-list-s-btn">
+            <p>Donate Us</p>
+        </a>
+    </div>
+
+    <div id="menu-icon-container1" class="menu-icon-container">
+        <div onclick="toggleMenu()">
+            <img src="images/assets/menu-icon.png" alt="Menu" class="menu-icon">
+        </div>
+    </div>
+</div>
+
+<div id="menu-navigation-list-container">
+    <div class="menu-navigation-list">
+        <a href="genres.html">Genres</a>
+        <a href="az-list.html">AZ List</a>
+        <a href="about-us-page.html">About Us</a>
+        <a href="request.html">Request Updates</a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QMAJH76B7XFNJ" target="_blank">Donate Us</a>
+        <a onclick="toggleMenu()">Close</a>
+        <br>
+        <form onsubmit="openSearch('searchbar_#2'); return false;" class="menu-search-bar-container">
+            <input type="text" id="searchbar_#2" placeholder="Search anime or series">
+            <button type="submit" class="center">
+                <img src="images\assets\search-icon.png" alt="search button">
+            </button>
+        </form>
+    </div>
+</div>
+
+<button class="backToTop-btn-c" onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;">
+    <div id="backToTop" class="backToTop-btn1"></div>
+    <div class="backToTop-btn2">
+        <img src="images/assets/arrow-2.png" alt="back to top">
+    </div>
+</button>
+
+<div id="bookmark-popup-container">
+    <div id="bookmark-popup" onclick="togglePopupMessage()">
+        <img src="images/assets/message-icon.png" alt="popup-message">
+        <div class="popup-container">
+            <div>
+                <span
+                    onclick="document.getElementById('bookmark-popup').style.display = 'none'; localStorage.setItem('site_bookmark', true);">&times;</span>
+                <h2>Enjoying our site?</h2>
+                <p>Make sure to add us to Bookmarks. So, you'll never miss any new series!</p>
+                <button onclick="add_bookmark()">Bookmark Us</button>
+            </div>
+        </div>
+    </div>
+</div>

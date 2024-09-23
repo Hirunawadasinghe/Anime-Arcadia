@@ -1,0 +1,37 @@
+[
+    {
+        "movie_id": "0000000015",
+        "thumbnail_image": "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/8295003/your_name_oped.jpg?quality=90&strip=all&crop=0.036284470246741,0,99.927431059507,100",
+        "title": "Your Name."
+    },
+    {
+        "movie_id": "0000000021",
+        "thumbnail_image": "https://images.immediate.co.uk/production/volatile/sites/3/2021/07/KonoSube-3d1a589.jpg",
+        "title": "KonoSuba: God's Blessing on This Wonderful World! S1"
+    },
+    {
+        "movie_id": "0000000025",
+        "thumbnail_image": "https://i.pinimg.com/originals/5b/26/26/5b262629a153363a7f0e150a6ca9dffb.png",
+        "title": "Attack on Titan"
+    },
+    {
+        "movie_id": "0000000030",
+        "thumbnail_image": "https://image.tmdb.org/t/p/original/YLyORLsYIjC0d1TFBSpJKk7piP.jpg",
+        "title": "I Want To Eat Your Pancreas"
+    },
+    {
+        "movie_id": "0000000012",
+        "thumbnail_image": "https://images.squarespace-cdn.com/content/v1/5a131a889f8dce224937b0b7/1531632080839-3ZHZGZSDSJ1984SDXLV2/image-asset.jpeg",
+        "title": "Darling in the FranXX"
+    },
+    {
+        "movie_id": "0000000008",
+        "thumbnail_image": "https://dashgamer.com/wp-content/uploads/2021/10/dslayerhero.jpg",
+        "title": "Demon Slayer: Kimetsu no Yaiba"
+    },
+    {
+        "movie_id": "0000000045",
+        "thumbnail_image": "https://i.ytimg.com/vi/WeWMfRunu1w/maxresdefault.jpg",
+        "title": "Jujutsu Kaisen"
+    }
+]
